@@ -17,8 +17,7 @@ public class GuidePage_002_WriteStrategy_Test extends BasePrepare{
 		GuidePageHelper.clickOnGp(appiumUtils, GuidePage.GP_BUTTON_GUIDE);
 		GuidePageHelper.pauseOnGp(appiumUtils, 2);
 		GuidePageHelper.clickOnGp(appiumUtils, WriteStrategyPage.WSP_ENTER_STRATEGY);
-		driver.findElement(WriteStrategyPage.WSP_EDIT_TITLE).sendKeys("攻略");
-		//GuidePageHelper.enterContent(appiumUtils, WriteStrategyPage.WSP_EDIT_TITLE, "攻略");
+		GuidePageHelper.enterContent(appiumUtils, WriteStrategyPage.WSP_EDIT_TITLE, "攻略");
 		GuidePageHelper.enterContent(appiumUtils, WriteStrategyPage.WSP_EDIT_CONTENT, "这条攻略是从书城＼书架＼收藏添加书后发布的");
 		GuidePageHelper.clickOnGp(appiumUtils, WriteStrategyPage.WSP_BUTTON_ADD_BOOK);
 		GuidePageHelper.clickOnGp(appiumUtils,WriteStrategyPage.WSP_ADD_FROM_STORE);
@@ -49,6 +48,10 @@ public class GuidePage_002_WriteStrategy_Test extends BasePrepare{
 		GuidePageHelper.clickOnGp(appiumUtils, WriteStrategyPage.WSP_BUTTON_PREVIEW);
 		GuidePageHelper.clickOnGp(appiumUtils, WriteStrategyPage.WSP_BUTTON_BACK);
 		GuidePageHelper.clickOnGp(appiumUtils, WriteStrategyPage.WSP_BUTTON_COMMIT);
+	}
+	@Test
+	public void writeStrategy_01_AddBookFormShelf(){
+		
 	}
 
 }

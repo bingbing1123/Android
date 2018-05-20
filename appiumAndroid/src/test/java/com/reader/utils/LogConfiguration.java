@@ -15,7 +15,6 @@ public class LogConfiguration {
 	public static void initLog(String fileName){
 		//获取到模块名字
 		String functionName = getFunctionName(fileName);
-		System.out.println(functionName);
 		//声明日志文件存储路径以及文件名、格式
 	    final String logFilePath  = "./result/logs/"+functionName+"/"+fileName+".log";  
 		Properties prop = new Properties();

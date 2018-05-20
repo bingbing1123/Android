@@ -27,14 +27,12 @@ public class GuidePage_001_Hot_Test extends BasePrepare {
 		List<WebElement> list_topic = GuidePageHelper.findElementLisOnGp(appiumUtils, GuidePage.GP_BUTTON_TOPIC);
 		//int index = (int)Math.random()*(list_topic.size()-1);
 		WebElement topic = list_topic.get(1);
-		String topic_text = topic.getText().toString();
 		topic.click();
 		GuidePageHelper.clickOnGp(appiumUtils, ChannelPage.CP_BUTTON_BACK);
 
 		GuidePageHelper.clickOnGp(appiumUtils, GuidePage.GP_BUTTON_CHANGE);
 		List<WebElement> list_topic2 = driver.findElements(GuidePage.GP_BUTTON_TOPIC);
 		WebElement topic2 = list_topic2.get(1);
-		String topic_text2 = topic.getText().trim();
 		topic2.click();
 		GuidePageHelper.clickOnGp(appiumUtils, ChannelPage.CP_BUTTON_BACK);
 	}
