@@ -1,11 +1,8 @@
 package com.reader.testcase.guide;
 
-import io.appium.java_client.TouchAction;
 
-import java.time.Duration;
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
@@ -13,6 +10,7 @@ import com.reader.base.BasePrepare;
 import com.reader.pages.guide.ArticlePage;
 import com.reader.pages.guide.ChannelPage;
 import com.reader.pages.guide.GuidePage;
+import com.reader.pages.guide.RecommendChannel;
 import com.reader.pageshelper.guide.GuidePageHelper;
 import com.reader.utils.AppiumUtils;
 
@@ -82,9 +80,8 @@ public class GuidePage_001_Hot_Test extends BasePrepare {
 		AppiumUtils.swipeToUp();
 		AppiumUtils.swipeToUp();
 		AppiumUtils.swipeToUp();
-			GuidePageHelper.clickOnGp(appiumUtils,GuidePage.GP_RECOMMEND_CHANNEL_MORE);
-		
-
+		GuidePageHelper.clickOnGp(appiumUtils,GuidePage.GP_RECOMMEND_CHANNEL_MORE);
+		GuidePageHelper.clickOnGp(appiumUtils, RecommendChannel.RC_BUTTON_BACK);
 	}
 
 }

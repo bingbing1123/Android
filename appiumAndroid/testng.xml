@@ -35,9 +35,12 @@
 	<parameter name="appFilePath" value="res/properties/app.properties" />
     
   <test name="书架">
-      <packages>
+      <!-- <packages>
           <package name="com.reader.testcase.guide"></package>
-      </packages>
+      </packages> -->
+      <classes>
+          <class name="com.reader.testcase.guide.GuidePage_002_WriteStrategy_Test"></class>
+      </classes>
   </test>
   
 </suite> <!-- Suite -->

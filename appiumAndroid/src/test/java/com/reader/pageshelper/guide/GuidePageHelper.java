@@ -25,5 +25,10 @@ public class GuidePageHelper {
 	public static void pauseOnGp(AppiumUtils appiumUtils,int time){
 		appiumUtils.pause(time);
 	}
+	
+	//输入内容
+	public static void enterContent(AppiumUtils appiumUtils,By element,String str){
+		appiumUtils.typeContent(element, str);
+	}
 
 }

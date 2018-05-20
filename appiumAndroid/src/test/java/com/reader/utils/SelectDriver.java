@@ -100,7 +100,7 @@ public class SelectDriver {
 				 * */
 	    	  File app = new File(classpathRoot, androidAppPath);
 		      capabilities.setCapability("app", app.getAbsolutePath());
-		      //capabilities.setCapability("unicodeKeyboard", unicodeKeyboard);
+		      capabilities.setCapability("unicodeKeyboard", unicodeKeyboard);
 		      capabilities.setCapability("resetKeyboard", resetKeyboard);
 		      capabilities.setCapability("automationName",automationName);
 		      capabilities.setCapability("appPackage", appPackage);
