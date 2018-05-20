@@ -18,7 +18,7 @@
 	<!--app的包  -->
 	<parameter name="appPackage" value="com.dangdang.reader" />
 	<!--app的 activity  -->
-	<parameter name="appActivity" value=".activity.MainActivity" />
+	<parameter name="appActivity" value=".activity.GuideActivity" />
 	<!--是否支持unicode输入设置为true可以输入中文字符  -->
 	<parameter name="unicodeKeyboard" value="true" />
 	<!-- 重置键盘输入法 -->

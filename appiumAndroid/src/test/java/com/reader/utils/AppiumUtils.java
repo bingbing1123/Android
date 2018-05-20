@@ -182,12 +182,12 @@ public class AppiumUtils {
 	}
 	
 	//向上滑动
-	public void swipeToUp(){
+	public static void swipeToUp(){
 		Duration duration=Duration.ofSeconds(1);
 		int width = driver.manage().window().getSize().width;
 		int height = driver.manage().window().getSize().height;
 //		driver.swipe(width/2, height*3/4, width/2, height/4, duration);
-		TouchAction action = new TouchAction(driver).press(width/2,height * 4/5).waitAction(duration).moveTo(width /2, height /4).release();
+		TouchAction action = new TouchAction(driver).press(width/2,height * 4/5).waitAction(duration).moveTo(width /2, height /5).release();
 		action.perform();
 	}
 	

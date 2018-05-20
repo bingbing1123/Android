@@ -1,4 +1,4 @@
-package com.reader.pages;
+package com.reader.pages.guide;
 
 import org.openqa.selenium.By;
 

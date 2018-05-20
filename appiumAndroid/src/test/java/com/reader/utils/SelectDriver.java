@@ -90,8 +90,8 @@ public class SelectDriver {
 	    capabilities.setCapability("platformVersion",platformVersion);
 	    capabilities.setCapability("deviceName",deviceName);
 	    capabilities.setCapability("sessionOverride", sessionOverride);
-	    capabilities.setCapability("noReset","True");
-	    capabilities.setCapability("noSign", "True");
+	    capabilities.setCapability("noReset",true);
+	    capabilities.setCapability("noSign", true);
 	      
 	     //如果测试平台是android的话，执行下面这个if语句内容
 	    if(platformName.equalsIgnoreCase("android")){
