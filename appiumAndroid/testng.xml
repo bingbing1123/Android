@@ -8,9 +8,9 @@
 	<!-- 测试平台 iOS和Android-->
 	<parameter name="platformName" value="Android" />
 	<!-- 平台版本 -->
-	<parameter name="platformVersion" value="8.1.0" />
+	<parameter name="platformVersion" value="5.1" />
 	<!-- 设备名字，可随意起名字，但是要有意义 -->
-	<parameter name="deviceName" value="ed18daed" />
+	<parameter name="deviceName" value="N7VSKZFA99999999" />
 	<!-- android app路径 -->
     <parameter name="androidAppPath" value="res/app/release.apk" />
     <!-- ios app路径 -->

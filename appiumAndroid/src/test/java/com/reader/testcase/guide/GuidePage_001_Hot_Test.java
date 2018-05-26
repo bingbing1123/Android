@@ -25,6 +25,7 @@ public class GuidePage_001_Hot_Test extends BasePrepare {
 	/**
 	 * 话题测试
 	 */
+	@Test
 	public void GuidePage_01_topicList() {
 		GuidePageHelper.pauseOnGp(appiumUtils, 5);
 		GuidePageHelper.clickOnGp(appiumUtils, GuidePage.GP_BUTTON_GUIDE);
@@ -110,10 +111,8 @@ public class GuidePage_001_Hot_Test extends BasePrepare {
 				.getText().trim();
 		article.click();
 		appiumUtils.pause(1);
-		String channel_detail_name = appiumUtils
-				.findElement(ArticlePage.AP_CHANNEL_TITLE).getText().trim();
-		String article_detail_title = appiumUtils
-				.findElement(ArticlePage.AP_ARTICLE_TITLE).getText().trim();
+		String channel_detail_name = appiumUtils.findElement(ArticlePage.AP_CHANNEL_TITLE).getText().trim();
+		String article_detail_title = appiumUtils.findElement(ArticlePage.AP_ARTICLE_TITLE).getText().trim();
 		appiumUtils.isTextCorrect(channel_detail_name, channel_name);
 		appiumUtils.isTextCorrect(article_detail_title, article_title);
 		driver.findElement(ArticlePage.AP_BUTTON_BACK).click();
@@ -144,10 +143,7 @@ public class GuidePage_001_Hot_Test extends BasePrepare {
 				logger.info("没有找到推荐专栏");
 			}
 		}
-
-			
-			GuidePageHelper.clickOnGp(appiumUtils,
-					RecommendChannel.RC_BUTTON_BACK);
+			GuidePageHelper.clickOnGp(appiumUtils,RecommendChannel.RC_BUTTON_BACK);
 		}
 
 }
