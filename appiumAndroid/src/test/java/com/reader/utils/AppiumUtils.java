@@ -119,10 +119,10 @@ public class AppiumUtils {
 		try {
 			assertTrue(actual.contains(expect));
 		} catch (AssertionError e) {
-			logger.info("跳转正确，得到的[" + actual + "] 里没有［" + expect + "]");
-			Assert.fail("跳转正确，得到的[" + actual + "] 里没有［" + expect + "]");
+			logger.info("跳转异常，得到的[" + actual + "] 里没有［" + expect + "]");
+			Assert.fail("跳转异常，得到的[" + actual + "] 里没有［" + expect + "]");
 		}
-		logger.info("跳转异常，得到的[" + actual + "] 里包含［" + expect + "]");
+		logger.info("页面跳转正确，得到的[" + actual + "] 里包含［" + expect + "]");
 	}
 	
 	//判断元素是否显示

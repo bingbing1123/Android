@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.log4testng.Logger;
 
 import com.reader.utils.AppiumUtils;
 

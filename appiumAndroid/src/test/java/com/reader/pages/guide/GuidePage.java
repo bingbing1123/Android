@@ -21,7 +21,7 @@ public class GuidePage {
 	
 	//热门话题部分
 	public static final By GP_BUTTON_CHANGE = By.id("com.dangdang.reader:id/change_tv");  //换一换
-	public static final By GP_BUTTON_TOPIC = By.id("com.dangdang.reader:id/title_tv"); 		//话题
+	public static final By GP_ITEM_TOPIC = By.id("com.dangdang.reader:id/title_tv"); 		//话题
 	
 	//热门文章部分
 	public static final By GP_CHANNEL_NAME= By.id("com.dangdang.reader:id/author_tv");		//频道名称

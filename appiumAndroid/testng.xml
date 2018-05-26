@@ -39,7 +39,7 @@
           <package name="com.reader.testcase.guide"></package>
       </packages> -->
       <classes>
-          <class name="com.reader.testcase.guide.GuidePage_002_WriteStrategy_Test"></class>
+          <class name="com.reader.testcase.guide.GuidePage_001_Hot_Test"></class>
       </classes>
   </test>
   
